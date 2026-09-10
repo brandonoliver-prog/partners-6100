@@ -400,7 +400,7 @@ function Index() {
 
       <footer className="border-t border-primary-foreground/10 bg-ink text-primary-foreground">
         <div className="mx-auto flex max-w-[1440px] flex-col gap-8 px-6 py-10 sm:flex-row sm:items-end sm:justify-between lg:px-12">
-          <div><BrandMark inverse /><p className="mt-5 text-xs text-primary-foreground/45">Nashville-based. National reach.</p><Link to="/nashville" className="mt-3 inline-block text-xs text-primary-foreground/55 underline-offset-4 hover:text-bronze-soft hover:underline">Nashville services</Link></div>
+          <div><BrandMark inverse /><p className="mt-5 text-xs text-primary-foreground/45">Nashville-based. National reach.</p><Link to="/nashville" className="mt-3 inline-block text-xs text-primary-foreground/55 underline-offset-4 hover:text-bronze-soft hover:underline">Nashville services</Link><Link to="/portfolio" className="mt-3 ml-5 inline-block text-xs text-primary-foreground/55 underline-offset-4 hover:text-bronze-soft hover:underline">Portfolio &amp; case studies</Link></div>
           <div className="text-left sm:text-right"><a href="mailto:brandon.oliver@6100partners.com" className="text-sm text-primary-foreground/70 hover:text-bronze-soft">brandon.oliver@6100partners.com</a><p className="mt-3 text-xs text-primary-foreground/35">© 2026 6100 Partners, LLC. All rights reserved.</p></div>
         </div>
       </footer>

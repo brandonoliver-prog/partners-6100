@@ -220,9 +220,10 @@ function PortfolioPage() {
             </h2>
             <p className="mt-6 text-base leading-7 text-muted-foreground">
             Each profile follows the same arc: the situation, the operating approach,
-            and the measured outcome — drawn from Brandon Oliver's operating record at
-            Tivity Health, MedZED, PopHealthCare / Emcara Health, and 6100 Partners
-            advisory engagements.
+            and the measured outcome — drawn from Brandon Oliver's operating record
+            across publicly traded healthcare platforms, Medicaid value-based care,
+            multi-state clinical services organizations, and 6100 Partners advisory
+            engagements.
             </p>
           </div>
           <div className="mt-16 grid gap-px bg-border md:grid-cols-2">

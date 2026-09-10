@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "executive advisory, operational leadership, fractional COO, interim COO, private equity value creation, healthcare operations, HealthTech scaling, operational turnaround, P&L optimization",
+          "executive advisory services, executive advisor, c suite advisory, operational leadership, operations leadership, fractional COO, fractional chief operating officer, coo for hire, fractional coo consulting, hire fractional coo, interim COO, private equity value creation, portfolio value creation, operating partner private equity, value creation consulting, operational due diligence, operational due diligence private equity, healthcare turnaround, operational turnaround, P&L optimization, multi-state operations, Nashville",
       },
       { property: "og:title", content: "6100 Partners | Executive Advisory & Operations" },
       { property: "og:description", content: description },

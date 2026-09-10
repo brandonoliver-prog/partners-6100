@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://impact-accelerate.lovable.app/sitemap.xml
+Sitemap: https://partners-6100.lovable.app/sitemap.xml

@@ -72,11 +72,13 @@ export const Route = createFileRoute("/")({
           address: { "@type": "PostalAddress", addressLocality: "Nashville", addressRegion: "TN" },
           email: "brandon.oliver@6100partners.com",
           knowsAbout: [
-            "Executive advisory",
-            "Operational leadership",
+            "Executive advisory services",
+            "C-suite advisory and operational leadership",
             "Fractional and interim COO services",
-            "Private equity value creation",
+            "Private equity value creation and portfolio operations",
+            "Operational diligence and 100-day planning",
             "Healthcare and HealthTech operations",
+            "Multi-state operations and value-based care models",
             "Operational turnarounds and P&L optimization",
           ],
           hasOfferCatalog: {

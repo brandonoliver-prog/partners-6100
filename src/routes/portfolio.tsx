@@ -94,63 +94,63 @@ const practiceAreas = [
 const caseStudies = [
   {
     category: "Private Equity Value Creation",
-    title: "Portfolio company scaling — healthcare services platform",
+    title: "Nutrisystem acquisition integration — Tivity Health",
     situation:
-      "A private equity-backed healthcare services platform needed to convert aggressive growth ambitions into an operating model that could absorb multi-state expansion without losing discipline.",
+      "A publicly traded healthcare services platform acquired Nutrisystem and needed an Integration Management Office to convert the deal thesis into captured value.",
     approach:
-      "Built the value creation plan alongside the sponsor and management team; installed scalable operating systems, leadership cadence, and performance management across the platform.",
+      "Led the IMO and cross-functional workstreams across the combined organization, aligning integration priorities to revenue synergy targets and operating metrics.",
     outcome:
-      "A repeatable operating foundation supporting expansion, with clear accountability structures and reporting rigor aligned to the sponsor's hold-period objectives.",
+      "Identified $50M in revenue synergies and built the governance to capture post-deal value across the combined platform.",
   },
   {
     category: "Private Equity Value Creation",
-    title: "Operational diligence & 100-day plan — sponsor acquisition",
+    title: "Enterprise divestiture & turnaround — Healthways / Tivity Health",
     situation:
-      "A sponsor evaluating a healthcare services acquisition required an operator's view of the target's true operational condition and post-close priorities.",
+      "The enterprise needed to divest its Population Health business — 1,700 employees and $100M in contracted spend — while simultaneously restructuring the remaining platform.",
     approach:
-      "Led operational diligence assessing systems, leadership, and scalability; translated findings into a concrete 100-day plan and first-year value creation roadmap.",
+      "Directed Day One readiness and governance through a 14-month Transition Services Agreement; drove $45–50M in restructuring and turnaround initiatives while enforcing cost discipline.",
     outcome:
-      "The sponsor entered ownership with a validated operating thesis and a sequenced execution plan, accelerating time-to-value in the critical first months.",
+      "Cut transition costs by $10M while maintaining TSA compliance, captured $25M in turnaround savings, and surfaced an additional $30–40M opportunity.",
   },
   {
     category: "Healthcare Turnaround",
-    title: "Operating turnaround — multi-site healthcare services provider",
+    title: "Operating turnaround — MedZED (Medicaid value-based care)",
     situation:
-      "A multi-site provider faced deteriorating margins, inconsistent operating practices across locations, and leadership strain.",
+      "A multi-state Medicaid field operations company serving roughly 7,500 lives faced negative EBITDA, 27% workforce turnover, and an operating model unprepared for Medicaid reform.",
     approach:
-      "Diagnosed P&L drivers site by site; standardized operating rhythms, staffing models, and accountability; rebuilt the management cadence around a small set of decisive metrics.",
+      "As COO, restructured markets, redesigned the operating model end to end, standardized KPIs, SOPs, and executive cadence, and enforced disciplined cost controls.",
     outcome:
-      "Stabilized operations and restored P&L discipline, positioning the organization for sustainable performance rather than episodic fixes.",
+      "Turned negative EBITDA positive within 7 months, delivered 5%+ month-over-month organic revenue growth, cut turnover from 27% to 3–5%, and executed two strategic divestitures in 6 months.",
   },
   {
     category: "Healthcare Turnaround",
-    title: "Transformation — value-based care operations",
+    title: "Growth & margin expansion — PopHealthCare / Emcara Health",
     situation:
-      "A healthcare organization transitioning toward value-based care models needed its operations re-architected to perform under new reimbursement and care delivery economics.",
+      "A value-based care organization with 17 health plan contracts and 18,000+ longitudinal-care members needed operating leverage across clinical operations, call center, product, and quality.",
     approach:
-      "Redesigned operating processes, reporting, and cross-functional workflows to support value-based performance; aligned leadership incentives and execution cadence to the new model.",
+      "As COO with full P&L accountability, led 250+ employees and 200+ clinicians; redesigned workflows, strengthened revenue integrity, and scaled technology-enabled care delivery.",
     outcome:
-      "An operating structure capable of managing value-based contracts with the rigor and speed the model demands.",
+      "Grew revenue 36% from 2020 to 2023, expanded operating infrastructure from $50M to $80M, lifted longitudinal-care margins 10% year over year, and turned the Risk Analytics and In-Home Assessment lines profitable in 2022.",
   },
   {
     category: "Interim COO Leadership",
-    title: "Interim COO — HealthTech company in growth transition",
+    title: "Interim COO — CareSight (PopHealthCare / Emcara Health)",
     situation:
-      "A HealthTech company outgrew its early operating structure; the founders needed seasoned operating leadership during a pivotal scaling phase.",
+      "Clinical product lines needed seasoned operational leadership and tighter operating leverage during a period of organizational change.",
     approach:
-      "Stepped in as interim COO with full operating accountability; built the leadership team cadence, scalable systems, and execution discipline; defined the permanent COO profile.",
+      "Stepped in as interim COO alongside the SVP, Innovation Performance mandate — taking direct operational leadership across clinical product lines and service quality.",
     outcome:
-      "A stabilized, scalable operating rhythm and a clean transition path to permanent operating leadership.",
+      "Stabilized operations and improved operating leverage across the product lines while permanent leadership structures were established.",
   },
   {
     category: "Interim COO Leadership",
-    title: "Fractional COO — founder-led healthcare services firm",
+    title: "Fractional operating leadership — 6100 Partners advisory clients",
     situation:
-      "A founder-led services firm needed executive operating capacity without the cost of a full-time hire during a critical growth window.",
+      "Growth-stage and value-based care organizations — including a maternal health Series B company and a Medicaid startup backed by Frist-Cressy Ventures — needed executive operating capacity without permanent overhead.",
     approach:
-      "Served as fractional COO — owning operating planning, management cadence, and execution priorities while coaching the internal team into greater accountability.",
+      "Delivered fractional COO leadership: built playbooks, SOPs, and SLAs for consolidated call center and nursing operations, launched a CCaaS platform, and designed engagement operations and data-enrichment strategy.",
     outcome:
-      "Senior-level operating leadership delivered flexibly, with durable systems and habits that outlasted the engagement.",
+      "Reduced average handle time 20% and no-answer rates 10% for the maternal health company; lifted member engagement above 50% for the Medicaid startup; architected a WellSky–Tango Health joint venture powering a national health plan's 60-day value-based care initiative.",
   },
 ];
 

@@ -209,6 +209,9 @@ function Index() {
                 {label}
               </a>
             ))}
+            <Link to="/portfolio" className="text-xs font-medium text-primary-foreground/75 transition-colors hover:text-bronze-soft">
+              Portfolio
+            </Link>
           </nav>
           <div className="hidden lg:block">
             <Button asChild className="h-11 rounded-none bg-bronze px-5 text-primary-foreground shadow-none hover:bg-bronze/90">
@@ -233,6 +236,7 @@ function Index() {
                 const href = `#${label.toLowerCase().replace(" areas", "s")}`;
                 return <a key={label} href={href} onClick={() => setMenuOpen(false)} className="text-sm text-primary-foreground">{label}</a>;
               })}
+              <Link to="/portfolio" onClick={() => setMenuOpen(false)} className="text-sm text-primary-foreground">Portfolio</Link>
             </div>
           </nav>
         )}

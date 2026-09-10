@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "executive advisory, operational leadership, fractional COO, interim COO, private equity value creation, healthcare operations, HealthTech scaling, operational turnaround, P&L optimization",
+          "executive advisory services, executive advisor, c suite advisory, operational leadership, operations leadership, fractional COO, fractional chief operating officer, coo for hire, fractional coo consulting, hire fractional coo, interim COO, private equity value creation, portfolio value creation, operating partner private equity, value creation consulting, operational due diligence, operational due diligence private equity, healthcare turnaround, operational turnaround, P&L optimization, multi-state operations, Nashville",
       },
       { property: "og:title", content: "6100 Partners | Executive Advisory & Operations" },
       { property: "og:description", content: description },
@@ -72,11 +72,13 @@ export const Route = createFileRoute("/")({
           address: { "@type": "PostalAddress", addressLocality: "Nashville", addressRegion: "TN" },
           email: "brandon.oliver@6100partners.com",
           knowsAbout: [
-            "Executive advisory",
-            "Operational leadership",
+            "Executive advisory services",
+            "C-suite advisory and operational leadership",
             "Fractional and interim COO services",
-            "Private equity value creation",
+            "Private equity value creation and portfolio operations",
+            "Operational diligence and 100-day planning",
             "Healthcare and HealthTech operations",
+            "Multi-state operations and value-based care models",
             "Operational turnarounds and P&L optimization",
           ],
           hasOfferCatalog: {
@@ -366,6 +368,77 @@ function Index() {
               const ItemIcon = Icon as typeof Globe2;
               return <div key={String(title)} className="bg-background p-8"><ItemIcon className="size-5 text-bronze" /><h3 className="mt-8 text-lg font-semibold text-primary">{String(title)}</h3><p className="mt-3 text-sm leading-6 text-muted-foreground">{String(copy)}</p></div>;
             })}
+          </div>
+        </div>
+      </section>
+
+      <section id="advisory-leadership" className="scroll-mt-20 border-b border-border bg-card py-24 lg:py-32">
+        <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase text-bronze">Executive advisory in practice</p>
+            <h2 className="mt-5 text-4xl font-medium leading-tight text-primary lg:text-5xl">
+              Executive advisory & operational leadership for complex organizations.
+            </h2>
+            <p className="mt-6 text-base leading-7 text-muted-foreground">
+              Organizations facing inflection points need more than recommendations — they need leaders who can operate.
+              6100 Partners provides executive advisory services and operational leadership for private equity sponsors,
+              portfolio company boards, and founders navigating growth, transformation, or scale.
+            </p>
+          </div>
+          <div className="mt-16 grid gap-12 lg:grid-cols-2">
+            <article>
+              <h3 className="text-xl font-semibold text-primary">Private equity value creation from diligence through the hold period</h3>
+              <p className="mt-4 text-sm leading-6 text-muted-foreground">
+                We support operational diligence, 100-day planning, and value creation plan execution for healthcare and
+                technology-backed investments. On a recent acquisition integration, we identified $50M in revenue synergies
+                and built the Integration Management Office to capture them. On a major enterprise divestiture and turnaround,
+                we directed a 14-month Transition Services Agreement covering 1,700 employees and $100M in contracted spend,
+                cutting transition costs by $10M while capturing $25M in turnaround savings and surfacing an additional $30–40M opportunity.
+              </p>
+            </article>
+            <article>
+              <h3 className="text-xl font-semibold text-primary">Fractional and interim COO leadership</h3>
+              <p className="mt-4 text-sm leading-6 text-muted-foreground">
+                When a board or founder needs seasoned operating capacity without the delay of a permanent search, we step
+                in as fractional or interim chief operating officer. Recent mandates include stabilizing a clinical product
+                division, launching a CCaaS platform that reduced average handle time by 20% and no-answer rates by 10%, and
+                designing engagement operations for a Medicaid startup that lifted member engagement above 50%.
+              </p>
+            </article>
+            <article>
+              <h3 className="text-xl font-semibold text-primary">Healthcare turnaround and P&L optimization</h3>
+              <p className="mt-4 text-sm leading-6 text-muted-foreground">
+                We stabilize healthcare services and HealthTech operations by restoring P&L discipline, clinical operating
+                rhythms, and scalable systems. In one multi-state Medicaid value-based care turnaround, we turned negative
+                EBITDA positive within seven months, delivered 5%+ month-over-month organic revenue growth, reduced workforce
+                turnover from 27% to 3–5%, and executed two strategic divestitures in six months. In another value-based care
+                organization, revenue grew 36% from 2020 to 2023, operating infrastructure expanded from $50M to $80M, and
+                longitudinal-care margins improved 10% year over year.
+              </p>
+            </article>
+            <article>
+              <h3 className="text-xl font-semibold text-primary">Multi-state operations and scalable systems</h3>
+              <p className="mt-4 text-sm leading-6 text-muted-foreground">
+                Scaling across markets requires repeatable operating models, clear KPIs, and disciplined execution. We help
+                organizations build the structures, processes, and leadership cadence to grow without eroding quality or
+                control — whether consolidating call center and nursing operations, architecting a joint venture for a national
+                health plan's value-based care initiative, or redesigning an operating model end to end.
+              </p>
+            </article>
+          </div>
+          <div className="mt-14 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <Link
+              to="/portfolio"
+              className="inline-flex h-12 items-center justify-center gap-2 border border-primary px-6 text-sm font-medium text-primary transition-colors hover:border-bronze hover:text-bronze"
+            >
+              Read the full portfolio & case studies <ArrowUpRight className="size-4" />
+            </Link>
+            <a
+              href="#contact"
+              className="inline-flex h-12 items-center justify-center gap-2 bg-bronze px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-bronze/90"
+            >
+              Request a consultation <ArrowRight className="size-4" />
+            </a>
           </div>
         </div>
       </section>

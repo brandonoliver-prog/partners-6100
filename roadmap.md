@@ -1,4 +1,5 @@
 # 6100 Partners Roadmap
 
-1. Rename published Lovable URL slug to `6100partners` — in progress
-2. Submit sitemap to Google Search Console after publish
+- [x] Rename published Lovable URL slug to `partners-6100`
+- [x] Connect Google Search Console and verify site
+- [x] Submit sitemap to Google Search Console

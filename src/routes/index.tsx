@@ -34,15 +34,23 @@ const description =
   "6100 Partners provides executive advisory and operational leadership for healthcare, HealthTech, and private equity-backed organizations.";
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "6100 Partners | Executive Advisory & Operations" },
       { name: "description", content: description },
+      {
+        name: "keywords",
+        content:
+          "executive advisory, operational leadership, fractional COO, interim COO, private equity value creation, healthcare operations, HealthTech scaling, operational turnaround, P&L optimization",
+      },
       { property: "og:title", content: "6100 Partners | Executive Advisory & Operations" },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "6100 Partners | Executive Advisory & Operations" },
+      { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [
@@ -52,10 +60,47 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
           name: "6100 Partners, LLC",
-          founder: { "@type": "Person", name: "Brandon Oliver", honorificSuffix: "MBA" },
+          description,
+          url: "https://impact-accelerate.lovable.app/",
+          founder: {
+            "@type": "Person",
+            name: "Brandon Oliver",
+            honorificSuffix: "MBA",
+            jobTitle: "Founder & Executive Advisor",
+          },
           areaServed: "United States",
-          address: { "@type": "PostalAddress", addressLocality: "Nashville" },
+          address: { "@type": "PostalAddress", addressLocality: "Nashville", addressRegion: "TN" },
           email: "brandon.oliver@6100partners.com",
+          knowsAbout: [
+            "Executive advisory",
+            "Operational leadership",
+            "Fractional and interim COO services",
+            "Private equity value creation",
+            "Healthcare and HealthTech operations",
+            "Operational turnarounds and P&L optimization",
+          ],
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Advisory & Operating Services",
+            itemListElement: [
+              "Private Equity Value Creation & Portfolio Support",
+              "Fractional & Interim Operational Leadership (COO)",
+              "Healthcare Services & HealthTech Growth",
+              "Turnaround & Operating Efficiency",
+            ].map((name) => ({
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name },
+            })),
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "6100 Partners",
+          url: "https://impact-accelerate.lovable.app/",
         }),
       },
     ],

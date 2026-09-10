@@ -177,9 +177,8 @@ function PortfolioPage() {
           </h1>
           <p className="mt-8 max-w-2xl text-base leading-7 text-primary-foreground/65">
             Two decades of private equity value creation, healthcare turnarounds, and
-            interim operating leadership. The case studies below are representative
-            engagement profiles — client identities are held in confidence, and detailed
-            references are available upon request.
+            interim operating leadership — with real figures from real engagements.
+            Advisory clients are described without names where confidentiality applies.
           </p>
           <div className="mt-10">
             <a
@@ -220,9 +219,10 @@ function PortfolioPage() {
               Representative engagements.
             </h2>
             <p className="mt-6 text-base leading-7 text-muted-foreground">
-              Each profile follows the same arc: the situation, the operating approach,
-              and the outcome. Specific metrics and client details are shared directly
-              during the consultation process.
+            Each profile follows the same arc: the situation, the operating approach,
+            and the measured outcome — drawn from Brandon Oliver's operating record at
+            Tivity Health, MedZED, PopHealthCare / Emcara Health, and 6100 Partners
+            advisory engagements.
             </p>
           </div>
           <div className="mt-16 grid gap-px bg-border md:grid-cols-2">

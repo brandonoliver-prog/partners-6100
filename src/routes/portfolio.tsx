@@ -94,9 +94,9 @@ const practiceAreas = [
 const caseStudies = [
   {
     category: "Private Equity Value Creation",
-    title: "Nutrisystem acquisition integration — Tivity Health",
+    title: "Acquisition integration — national health & wellness platform",
     situation:
-      "A publicly traded healthcare services platform acquired Nutrisystem and needed an Integration Management Office to convert the deal thesis into captured value.",
+      "A publicly traded healthcare services platform acquired a national direct-to-consumer nutrition and wellness brand and needed an Integration Management Office to convert the deal thesis into captured value.",
     approach:
       "Led the IMO and cross-functional workstreams across the combined organization, aligning integration priorities to revenue synergy targets and operating metrics.",
     outcome:
@@ -104,7 +104,7 @@ const caseStudies = [
   },
   {
     category: "Private Equity Value Creation",
-    title: "Enterprise divestiture & turnaround — Healthways / Tivity Health",
+    title: "Enterprise divestiture & turnaround — healthcare services platform",
     situation:
       "The enterprise needed to divest its Population Health business — 1,700 employees and $100M in contracted spend — while simultaneously restructuring the remaining platform.",
     approach:
@@ -114,7 +114,7 @@ const caseStudies = [
   },
   {
     category: "Healthcare Turnaround",
-    title: "Operating turnaround — MedZED (Medicaid value-based care)",
+    title: "Operating turnaround — Medicaid value-based care",
     situation:
       "A multi-state Medicaid field operations company serving roughly 7,500 lives faced negative EBITDA, 27% workforce turnover, and an operating model unprepared for Medicaid reform.",
     approach:
@@ -124,7 +124,7 @@ const caseStudies = [
   },
   {
     category: "Healthcare Turnaround",
-    title: "Growth & margin expansion — PopHealthCare / Emcara Health",
+    title: "Growth & margin expansion — value-based care organization",
     situation:
       "A value-based care organization with 17 health plan contracts and 18,000+ longitudinal-care members needed operating leverage across clinical operations, call center, product, and quality.",
     approach:
@@ -134,7 +134,7 @@ const caseStudies = [
   },
   {
     category: "Interim COO Leadership",
-    title: "Interim COO — CareSight (PopHealthCare / Emcara Health)",
+    title: "Interim COO — clinical product division",
     situation:
       "Clinical product lines needed seasoned operational leadership and tighter operating leverage during a period of organizational change.",
     approach:
@@ -146,11 +146,11 @@ const caseStudies = [
     category: "Interim COO Leadership",
     title: "Fractional operating leadership — 6100 Partners advisory clients",
     situation:
-      "Growth-stage and value-based care organizations — including a maternal health Series B company and a Medicaid startup backed by Frist-Cressy Ventures — needed executive operating capacity without permanent overhead.",
+      "Growth-stage and value-based care organizations — including a maternal health Series B company and a Medicaid startup backed by a leading healthcare venture fund — needed executive operating capacity without permanent overhead.",
     approach:
       "Delivered fractional COO leadership: built playbooks, SOPs, and SLAs for consolidated call center and nursing operations, launched a CCaaS platform, and designed engagement operations and data-enrichment strategy.",
     outcome:
-      "Reduced average handle time 20% and no-answer rates 10% for the maternal health company; lifted member engagement above 50% for the Medicaid startup; architected a WellSky–Tango Health joint venture powering a national health plan's 60-day value-based care initiative.",
+      "Reduced average handle time 20% and no-answer rates 10% for the maternal health company; lifted member engagement above 50% for the Medicaid startup; architected a joint venture between two healthcare technology platforms powering a national health plan's 60-day value-based care initiative.",
   },
 ];
 

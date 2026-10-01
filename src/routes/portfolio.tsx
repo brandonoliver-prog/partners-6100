@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ArrowUpRight, Briefcase, HeartPulse, Mail, MessageSquare, TrendingUp } from "lucide-react";
-import { useState } from "react";
+import { ArrowLeft, ArrowUpRight, Briefcase, HeartPulse, Mail, TrendingUp } from "lucide-react";
 
 const BASE_URL = "https://partners-6100.lovable.app";
 
@@ -171,11 +170,6 @@ const thesisProof = [
 ];
 
 function PortfolioPage() {
-  const [comment, setComment] = useState("");
-
-  const commentHref = `mailto:brandon.oliver@6100partners.com?subject=${encodeURIComponent(
-    "Anonymous comment — Operating Thesis"
-  )}&body=${encodeURIComponent(comment || "")}`;
   return (
     <main id="top" className="min-h-screen bg-background font-sans text-foreground">
       <header className="border-b border-border">

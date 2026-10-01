@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ArrowUpRight, Briefcase, HeartPulse, Mail, MessageSquare, TrendingUp } from "lucide-react";
-import { useState } from "react";
+import { ArrowLeft, ArrowUpRight, Briefcase, HeartPulse, Mail, TrendingUp } from "lucide-react";
 
 const BASE_URL = "https://partners-6100.lovable.app";
 
@@ -171,11 +170,6 @@ const thesisProof = [
 ];
 
 function PortfolioPage() {
-  const [comment, setComment] = useState("");
-
-  const commentHref = `mailto:brandon.oliver@6100partners.com?subject=${encodeURIComponent(
-    "Anonymous comment — Operating Thesis"
-  )}&body=${encodeURIComponent(comment || "")}`;
   return (
     <main id="top" className="min-h-screen bg-background font-sans text-foreground">
       <header className="border-b border-border">
@@ -317,32 +311,6 @@ function PortfolioPage() {
                   <p className="mt-3 text-xs leading-5 text-muted-foreground">{item.detail}</p>
                 </div>
               ))}
-            </div>
-          </div>
-
-          <div className="mt-16 border border-border p-8 lg:p-10">
-            <div className="flex items-center gap-3">
-              <MessageSquare className="size-5 text-bronze" />
-              <h3 className="text-lg font-semibold text-primary">Comment on the thesis — anonymously</h3>
-            </div>
-            <p className="mt-4 max-w-2xl text-sm leading-6 text-muted-foreground">
-              Agree, disagree, or add your own experience. No name or email is collected here —
-              your comment opens in your own email program and is sent only if you choose to send it.
-            </p>
-            <textarea
-              value={comment}
-              onChange={(e) => setComment(e.target.value)}
-              rows={5}
-              placeholder="Your anonymous comment on the operating thesis…"
-              className="mt-6 w-full border border-border bg-background p-4 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-bronze focus:outline-none"
-            />
-            <div className="mt-6">
-              <a
-                href={commentHref}
-                className="inline-flex h-12 items-center justify-center gap-2 bg-bronze px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-bronze/90"
-              >
-                <Mail className="size-4" /> Send comment anonymously
-              </a>
             </div>
           </div>
         </div>

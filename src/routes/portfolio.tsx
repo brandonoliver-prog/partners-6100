@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ArrowUpRight, Briefcase, HeartPulse, Mail, TrendingUp } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Briefcase, HeartPulse, Mail, MessageSquare, TrendingUp } from "lucide-react";
+import { useState } from "react";
 
 const BASE_URL = "https://partners-6100.lovable.app";
 
@@ -154,7 +155,27 @@ const caseStudies = [
   },
 ];
 
+const thesisPillars = [
+  "Clarity of strategy — the org must know what it is optimizing for, and why",
+  "Transparency of metrics — what gets measured runs the business, not slide decks",
+  "Leadership accountability — authority and responsibility travel together or not at all",
+  "Mission-margin alignment — sustainable care delivery requires both; you don't get to choose one",
+];
+
+const thesisProof = [
+  { figure: "18,000+", detail: "Patients under longitudinal in-home primary care — full P&L, 3 lines of business, 17 health plan contracts" },
+  { figure: "3 States", detail: "Operational restructuring — converted negative EBITDA to positive within 18 months" },
+  { figure: "$250M+", detail: "Enterprise vendor spend managed — governance structure built from scratch" },
+  { figure: "20–30K", detail: "Annual in-home prospective risk assessments executed across multi-state operations" },
+  { figure: "$45–50M", detail: "Turnaround and restructure of a population health business" },
+];
+
 function PortfolioPage() {
+  const [comment, setComment] = useState("");
+
+  const commentHref = `mailto:brandon.oliver@6100partners.com?subject=${encodeURIComponent(
+    "Anonymous comment — Operating Thesis"
+  )}&body=${encodeURIComponent(comment || "")}`;
   return (
     <main id="top" className="min-h-screen bg-background font-sans text-foreground">
       <header className="border-b border-border">
@@ -247,6 +268,82 @@ function PortfolioPage() {
                 </dl>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-border py-24 lg:py-32">
+        <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase text-bronze">Operating thesis</p>
+            <h2 className="mt-5 text-4xl font-medium leading-tight text-primary lg:text-5xl">
+              Platforms fail at the execution layer — not the strategy layer.
+            </h2>
+            <p className="mt-8 text-base leading-7 text-muted-foreground">
+              The thesis is sound. The infrastructure isn't built to carry it. 6100 Partners
+              closes that gap — coming in at moments of performance inflection, where margin
+              compression, operating complexity, or post-close chaos require someone who has
+              done it before and won't slow down to get up to speed.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-px bg-border md:grid-cols-2">
+            <div className="bg-background p-8 lg:p-10">
+              <h3 className="text-lg font-semibold text-primary">Where we operate</h3>
+              <ul className="mt-6 space-y-4 text-sm leading-6 text-muted-foreground">
+                <li>PE-backed platforms in the 24–48 month value creation window</li>
+                <li>Multi-state value-based care, Medicaid, and MA operating environments</li>
+                <li>In-home care, population health, and risk-bearing care delivery models</li>
+                <li>Turnaround situations where EBITDA trajectory needs to change fast</li>
+                <li>Growth-stage platforms that need operating infrastructure to match their equity story and drive margin expansion</li>
+              </ul>
+            </div>
+            <div className="bg-background p-8 lg:p-10">
+              <h3 className="text-lg font-semibold text-primary">How we work — four non-negotiables</h3>
+              <ul className="mt-6 space-y-4 text-sm leading-6 text-muted-foreground">
+                {thesisPillars.map((pillar) => (
+                  <li key={pillar}>{pillar}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-16">
+            <h3 className="text-lg font-semibold text-primary">Proof of execution</h3>
+            <div className="mt-8 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-5">
+              {thesisProof.map((item) => (
+                <div key={item.figure} className="bg-background p-6">
+                  <p className="text-2xl font-semibold text-bronze">{item.figure}</p>
+                  <p className="mt-3 text-xs leading-5 text-muted-foreground">{item.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-16 border border-border p-8 lg:p-10">
+            <div className="flex items-center gap-3">
+              <MessageSquare className="size-5 text-bronze" />
+              <h3 className="text-lg font-semibold text-primary">Comment on the thesis — anonymously</h3>
+            </div>
+            <p className="mt-4 max-w-2xl text-sm leading-6 text-muted-foreground">
+              Agree, disagree, or add your own experience. No name or email is collected here —
+              your comment opens in your own email program and is sent only if you choose to send it.
+            </p>
+            <textarea
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
+              rows={5}
+              placeholder="Your anonymous comment on the operating thesis…"
+              className="mt-6 w-full border border-border bg-background p-4 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-bronze focus:outline-none"
+            />
+            <div className="mt-6">
+              <a
+                href={commentHref}
+                className="inline-flex h-12 items-center justify-center gap-2 bg-bronze px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-bronze/90"
+              >
+                <Mail className="size-4" /> Send comment anonymously
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ArrowUpRight, Briefcase, HeartPulse, Mail, TrendingUp } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Briefcase, HeartPulse, Mail, MessageSquare, TrendingUp } from "lucide-react";
+import { useState } from "react";
 
 const BASE_URL = "https://partners-6100.lovable.app";
 
@@ -154,7 +155,27 @@ const caseStudies = [
   },
 ];
 
+const thesisPillars = [
+  "Clarity of strategy — the org must know what it is optimizing for, and why",
+  "Transparency of metrics — what gets measured runs the business, not slide decks",
+  "Leadership accountability — authority and responsibility travel together or not at all",
+  "Mission-margin alignment — sustainable care delivery requires both; you don't get to choose one",
+];
+
+const thesisProof = [
+  { figure: "18,000+", detail: "Patients under longitudinal in-home primary care — full P&L, 3 lines of business, 17 health plan contracts" },
+  { figure: "3 States", detail: "Operational restructuring — converted negative EBITDA to positive within 18 months" },
+  { figure: "$250M+", detail: "Enterprise vendor spend managed — governance structure built from scratch" },
+  { figure: "20–30K", detail: "Annual in-home prospective risk assessments executed across multi-state operations" },
+  { figure: "$45–50M", detail: "Turnaround and restructure of a population health business" },
+];
+
 function PortfolioPage() {
+  const [comment, setComment] = useState("");
+
+  const commentHref = `mailto:brandon.oliver@6100partners.com?subject=${encodeURIComponent(
+    "Anonymous comment — Operating Thesis"
+  )}&body=${encodeURIComponent(comment || "")}`;
   return (
     <main id="top" className="min-h-screen bg-background font-sans text-foreground">
       <header className="border-b border-border">
